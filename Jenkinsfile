@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Use credentialsId for authentication with the GitHub personal access token
-                git url: 'https://github.com/tiencuckoo/Team5_Evo.git', credentialsId: 'github-token' // Replace 'github-token' with your actual credentials ID
+                git url: 'https://github.com/tiencuckoo/Team5_Evo.git', credentialsId: 'github_token' // Replace 'github-token' with your actual credentials ID
             }
         }
         stage('Build') {
